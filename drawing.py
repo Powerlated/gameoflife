@@ -8,4 +8,4 @@ def draw():
 
 
 def __draw_background():
-    screen.blit(g.sidewalkImg, 0, 0)
+    screen.blit(g.sidewalkImg, 1, 1)

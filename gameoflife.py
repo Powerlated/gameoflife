@@ -1,5 +1,5 @@
 import pygame
-import draw
+from drawing import draw
 
 # Define some colors
 BLACK = (0, 0, 0)
@@ -28,6 +28,8 @@ while not crashed:
         print(event)
 
     screen.fill(WHITE)
+
+    draw()
 
     pygame.display.update()
 
