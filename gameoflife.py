@@ -1,5 +1,4 @@
 import pygame
-from drawing import draw
 
 # Define some colors
 BLACK = (0, 0, 0)
@@ -20,6 +19,8 @@ sidewalkImg = pygame.image.load('resources/sidewalk.jpg')
 crashed = False
 
 while not crashed:
+
+    from drawing import draw
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
