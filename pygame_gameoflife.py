@@ -10,6 +10,13 @@ size = (700, 500)
 screen = pygame.display.set_mode(size)
 clock = pygame.time.Clock()
 
+headsImg = pygame.image.load('heads.jpg')
+tailsImg = pygame.image.load('tails.jpg')
+guyImg = pygame.image.load('guy.jpg')
+sidewalkImg = pygame.image.load('sidewalk.jpg')
+
+
+
 crashed = False
 
 while not crashed:
@@ -20,5 +27,8 @@ while not crashed:
 
         print(event)
 
+    screen.fill(WHITE)
+
     pygame.display.update()
     clock.tick(60)
+
