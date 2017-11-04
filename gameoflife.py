@@ -7,16 +7,14 @@ GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
 
-size = (700, 500)
+size = (1024, 682)
 screen = pygame.display.set_mode(size)
 clock = pygame.time.Clock()
-
-headsImg = pygame.image.load('resources/heads.jpg')
-tailsImg = pygame.image.load('resources/tails.jpg')
-guyImg = pygame.image.load('resources/guy.jpg')
-sidewalkImg = pygame.image.load('resources/sidewalk.jpg')
+heads = True;
 
 crashed = False
+
+pygame.init()
 
 while not crashed:
 
